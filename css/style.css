@@ -1,0 +1,100 @@
+:root{
+    --bg-light-blue: #BCCEE4;
+    --btn-blue: #0061FE;
+    --btn-white: #FFF;
+    --bg-clients: #F5F5F5;
+    --bg-footer: #000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.debug{
+    border: 1px solid green;
+}
+
+ul{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* UTILS */
+.d-flex{
+    display: flex;
+}
+
+.btn{
+
+}
+
+.main-container{
+
+}
+
+.big-container{
+    
+}
+
+
+/* HEADER */
+header{
+    position: fixed;
+    top: 0;
+    height: 70px;
+    width: 100%;
+    font-size: .9rem;
+    overflow: auto;
+}
+header section{
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+header section img{
+    width: 120px;
+}
+header section .nav-l{
+    width: 40%;
+    height: 100%;
+    align-items: center;
+    min-width: 500px;
+    max-width: 600px;
+}
+header section ul li{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 15px;
+}
+header section .nav-r{
+    width: 30%;
+    height: 100%;
+
+    align-items: center;
+    min-width: 500px;
+    max-width: 600px;
+}
+header section .nav-r ul{
+    justify-content: flex-end;
+}
+
+header section ul li:not(.btn, .logo):hover{
+    cursor: pointer;
+    border-bottom: 2px solid black;
+}
