@@ -38,10 +38,11 @@ a{
 
 /* text */
 h1{
-    font-size: 4vw;
+    font-size: 4rem;
     font-weight: 800;
     display: block;
     width: 100%;
+    min-width: 880px;
     padding: 50px 0;
 }
 
@@ -62,7 +63,8 @@ h1{
 }
 
 .main-container{
-    
+    width: 85%;
+    margin: 0 auto;
 }
 
 .big-container{
@@ -138,16 +140,18 @@ header section .btn{
 }
 .jumbotron .item-j .jumbo-text{
     width: 30%;
-    font-size: 1vw;
+    min-width: 250px;
+    font-size: .9rem;
 }
 .jumbotron .item-j .jumbo-img{
     width: 80%;
+    min-width: 600px;
     max-width: 800px;
 }
 .jumbotron .item-j .jumbo-text > *{
     margin-bottom: 40px;
 }
 .jumbotron .item-j .jumbo-text .freccia{
-    font-size: 2.7rem;
+    font-size: 3vw;
     padding-bottom: 50px;
 }
