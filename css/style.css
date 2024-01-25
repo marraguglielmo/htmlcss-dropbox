@@ -40,7 +40,14 @@ a{
 }
 
 .btn{
-
+    padding: 5px 7px;
+}
+.btn-blue{
+    background-color: var(--btn-blue);
+    color: white;
+}
+.btn-blue:hover{
+    background-color: #0061fea4;
 }
 
 .main-container{
@@ -92,9 +99,14 @@ header section .nav-r{
 }
 header section .nav-r ul{
     justify-content: flex-end;
+    margin-right: 15px;
 }
 
-header section ul li:not(.btn, .logo):hover{
+header section ul li:not(.logo):hover{
     cursor: pointer;
     border-bottom: 2px solid black;
+    font-weight: 500;
+}
+header section .btn{
+    margin-right: 20px;
 }
