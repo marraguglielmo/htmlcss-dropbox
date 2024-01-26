@@ -151,6 +151,11 @@ header section .btn{
 
 
 /* MAIN */
+.plans,
+.partner{
+    margin-bottom: 150px;
+}
+
 .jumbotron{
     background-color: var(--bg-light-blue);
     justify-content: center;
@@ -322,3 +327,21 @@ section .big-container{
 
 }
 
+/* PARTNER */
+.partner .partner-img{
+    width: 70%;
+}
+.partner .partner-text{
+    padding: 50px;
+    width: 50%;
+}
+.partner .partner-text p{
+    margin-top: 20px;
+}
+.partner .partner-text .btn{
+    margin-top: 25px;
+    border: 1px solid black;
+}
+.partner .partner-text .btn:hover{
+    background-color: var(--border-gray);
+}
