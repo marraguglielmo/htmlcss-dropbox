@@ -5,6 +5,7 @@
     --bg-clients: #F5F5F5;
     --bg-footer: #000;
     --text-gray: #757070;
+    --border-gray: #bdbaba;
 }
 
 *{
@@ -53,14 +54,16 @@ h3{
     font-size: 1.5rem;
     font-weight: bold;
 }
-
+h4{
+    display: block;
+}
 /* UTILS */
 .d-flex{
     display: flex;
 }
 
 .btn{
-    padding: 8px 12px;
+    padding: 8px 15px;
 }
 .btn-blue{
     background-color: var(--btn-blue);
@@ -83,6 +86,11 @@ h3{
     justify-content: center;
 }
 
+.grey-row{
+    width: 55px;
+    border-top: 2px solid var(--border-gray);
+    margin: 40px 0 50px 0;
+}
 
 /* HEADER */
 header{
@@ -201,28 +209,65 @@ section .big-container{
 /* BOX CARDS */
 .main-container .box-cards{
     width: 100%;
-    height: 850px;
+    height: 950px;
     margin-top: 50px;
 }
 .box-cards .card{
     width: calc(100% / 3);
-    border: 1px solid black;
+    border: 1px solid var(--border-gray);
 }
 .box-cards .card:nth-child(2){
-    margin: 0 55px;
+    margin: 0 35px;
 }
 .card .top-card{
     text-align: center;
     padding: 10px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--border-gray);
 }
 .card .body-card{
     padding: 30px 20px;
     flex-direction: column;
 }
+/* TOP BODY CARD */
+.card .body-card .top-body{
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.card .body-card .top-body h3:first-child{
+    margin-bottom: 20px;
+}
 .card .body-card .plan-price{
     font-weight: bold;
+    margin-bottom: 13px;
 }
 .card .body-card .plan-pay{
     color: var(--text-gray);
+    font-weight: 500;
+}
+
+/* CENTRE BODY CARD */
+.card .body-card .centre-body{
+    flex-direction: column;
+    font-size: .96rem;
+}
+.card .body-card .centre-body i{
+    margin-right: 7px;
+}
+.card .body-card .centre-body > *{
+    margin: 15px 0;
+}
+.card .body-card .centre-body .btn{
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 98%;
+    padding: 13px 0;
+    margin-top: 30px;
+}
+.card .body-card .centre-body .buy-now a{
+    color: purple;
+    text-decoration: underline;
+}
+.card .body-card .centre-body .buy-now a:active{
+    color: red;
 }
