@@ -4,6 +4,7 @@
     --btn-white: #FFF;
     --bg-clients: #F5F5F5;
     --bg-footer: #000;
+    --text-gray: #757070;
 }
 
 *{
@@ -45,6 +46,13 @@ h1{
     min-width: 880px;
     padding: 50px 0;
 }
+h2{
+    font-size: 2.2rem;
+}
+h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
 /* UTILS */
 .d-flex{
@@ -63,8 +71,11 @@ h1{
 }
 
 .main-container{
-    width: 85%;
+    width: 60%;
+    min-width: 850px;
+    max-width: 950px;
     margin: 0 auto;
+    padding: 0 5px;
 }
 
 .big-container{
@@ -134,9 +145,11 @@ header section .btn{
     justify-content: center;
     height: 690px;
     padding-top: 30px;
+    margin-bottom: 150px;
 }
 .jumbotron .item-j{
     width: 100%;
+    max-width: 100%;
 }
 .jumbotron .item-j .jumbo-text{
     width: 30%;
@@ -154,4 +167,47 @@ header section .btn{
 .jumbotron .item-j .jumbo-text .freccia{
     font-size: 3vw;
     padding-bottom: 50px;
+}
+
+/* MAIN CONTAINER */
+.main-container .plans h2{
+    margin-bottom: 50px;
+}
+.main-container .plans .check-radio{
+    width: 45%;
+    min-width: 400px;
+    justify-content: space-between;
+}
+.main-container .plans .check-radio input[type="radio"]:focus{
+    border: #0061FE;
+    background: transparent;
+}
+
+/* BOX CARDS */
+.main-container .box-cards{
+    width: 100%;
+    height: 850px;
+    margin-top: 50px;
+}
+.box-cards .card{
+    width: calc(100% / 3);
+    border: 1px solid black;
+}
+.box-cards .card:nth-child(2){
+    margin: 0 55px;
+}
+.card .top-card{
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+.card .body-card{
+    padding: 30px 20px;
+    flex-direction: column;
+}
+.card .body-card .plan-price{
+    font-weight: bold;
+}
+.card .body-card .plan-pay{
+    color: var(--text-gray);
 }
