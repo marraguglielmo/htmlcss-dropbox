@@ -374,35 +374,67 @@ header section .btn{
     /* min-width: 500px;
     max-width: 510px; */
 }
-.gallery .glr-left{
+.gallery .glr-side{
     flex-wrap: wrap;
     min-width: 400px;
 }
 .gallery .glr-centre{
     background-color: var(--bg-clients);
     flex-direction: column;
+    width: calc(100% / 3);
     min-width: 400px;
     padding: 50px;
     font-size: .8rem;
     font-weight: 500;
+    overflow: auto;
+}
+.gallery .glr-centre .box-designit{
+    /* background-color: green; */
+    width: 100%;
+    overflow: auto;
 }
 .gallery .glr-centre #signature{
     margin-top: 40px;
 }
 .gallery .glr-centre img{
     width: 50%;
+    min-width: 190px;
 }
-.gallery .glr-left .square{
+.gallery .glr-side .square{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.gallery .glr-left .square img{
+.gallery .glr-side .square img{
     width: 60%;
     fill: white;
 }
-
 .square{
     width: 50%;
     height: 250px;
+}
+
+.square-green{
+    background-color: #A2D39B;
+}
+.square-bordeaux{
+    background-color: #61082B;
+}
+.square-blue1{
+    background-color: #09a7e6;
+}
+.square-red1{
+    background-color: #FF1C1C;
+}
+.square-red2{
+    background-color: #D5001F;
+}
+.square-blue2{
+    background-color: #B4D0E7;
+}
+.square-blue3{
+    background-color: #0D2481;
+}
+.square-yellow{
+    background-color: #FFD830;
 }
