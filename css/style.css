@@ -160,7 +160,8 @@ header section .btn{
 .plans,
 .partner,
 .business,
-.pre-gallery{
+.pre-gallery,
+.after-gallery{
     margin-bottom: 150px;
 }
 
@@ -405,9 +406,12 @@ header section .btn{
     justify-content: center;
     align-items: center;
 }
+.gallery .glr-side .square:hover{
+    border: 13px solid rgba(255,255,255,0.5);
+}
 .gallery .glr-side .square img{
     width: 60%;
-    fill: white;
+    filter: invert(100%) sepia(7%) saturate(1425%) hue-rotate(185deg) brightness(103%) contrast(106%);
 }
 .square{
     width: 50%;
@@ -438,6 +442,9 @@ header section .btn{
 .square-yellow{
     background-color: #FFD830;
 }
+/* .square-active{
+    border
+} */
 
 /* AFTER GALLERY */
 .after-gallery{
@@ -467,5 +474,6 @@ header section .btn{
 }
 .after-gallery .main-container .btn-gallery a:hover{
     background-color: rgb(219, 216, 216);
-    border: 2px solid black;
 }
+
+/* FAQ */
