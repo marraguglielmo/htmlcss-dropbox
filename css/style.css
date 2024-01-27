@@ -64,7 +64,7 @@ h4{
 }
 
 .btn{
-    width: fit-content;
+    /* width: fit-content; */
     padding: 8px 15px;
 }
 .btn-blue{
@@ -371,12 +371,12 @@ header section .btn{
 }
 .box-gallery{
     width: calc(100% / 3);
-    /* min-width: 500px;
-    max-width: 510px; */
+    min-width: 500px;
+    max-width: 510px;
 }
 .gallery .glr-side{
     flex-wrap: wrap;
-    min-width: 400px;
+    min-width: 420px;
 }
 .gallery .glr-centre{
     background-color: var(--bg-clients);
@@ -413,7 +413,7 @@ header section .btn{
     width: 50%;
     height: 250px;
 }
-
+/* COLORI BOX GALLERY */
 .square-green{
     background-color: #A2D39B;
 }
@@ -437,4 +437,35 @@ header section .btn{
 }
 .square-yellow{
     background-color: #FFD830;
+}
+
+/* AFTER GALLERY */
+.after-gallery{
+    background-color: #B4D0E7;
+    width: 100vw;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+.after-gallery .main-container{
+    justify-content: space-between;
+    align-items: center;
+}
+.after-gallery h2{
+    width: 70%;
+    color: #61082B;
+    margin: 0;
+}
+.after-gallery .main-container .btn-gallery{
+    width: 37%;
+    min-width: 300px;
+}
+.after-gallery .main-container .btn-gallery a{
+    background-color: var(--btn-white);
+    width: 100%;
+    padding: 10px 40px;
+}
+.after-gallery .main-container .btn-gallery a:hover{
+    background-color: rgb(219, 216, 216);
+    border: 2px solid black;
 }
