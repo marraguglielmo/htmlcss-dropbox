@@ -89,8 +89,8 @@ h4{
 }
 
 .grey-row{
-    width: 55px;
-    border-top: 2px solid var(--border-gray);
+    width: 22%;
+    border-top: 1px solid var(--border-gray);
     margin: 40px 0 50px 0;
 }
 
@@ -363,4 +363,46 @@ header section .btn{
 /* PRE GALLEY */
 .pre-gallery{
     width: 70%;
+}
+
+/* GALLERY */
+.gallery{
+    width: 100vw;
+}
+.box-gallery{
+    width: calc(100% / 3);
+    /* min-width: 500px;
+    max-width: 510px; */
+}
+.gallery .glr-left{
+    flex-wrap: wrap;
+    min-width: 400px;
+}
+.gallery .glr-centre{
+    background-color: var(--bg-clients);
+    flex-direction: column;
+    min-width: 400px;
+    padding: 50px;
+    font-size: .8rem;
+    font-weight: 500;
+}
+.gallery .glr-centre #signature{
+    margin-top: 40px;
+}
+.gallery .glr-centre img{
+    width: 50%;
+}
+.gallery .glr-left .square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery .glr-left .square img{
+    width: 60%;
+    fill: white;
+}
+
+.square{
+    width: 50%;
+    height: 250px;
 }
