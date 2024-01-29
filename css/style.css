@@ -482,10 +482,24 @@ header section .btn{
 }
 .row-faq{
     width: 100%;
-    justify-content: space-between;
-    padding: 40px 0;
+    flex-direction: column;
+    padding: 30px 0;
     border-top: 1px solid black;
     font-weight: 600;
+}
+.row-faq:hover{
+    cursor: pointer;
+}
+.row-faq:hover .hidden-row{
+    display: block;
+}
+.row-faq .block-row{
+    justify-content: space-between;
+}
+.row-faq .hidden-row{
+    margin: 40px 0 0 0;
+    font-weight: 300;
+    display: none;
 }
 .row-faq i{
     margin-right: 40px;
