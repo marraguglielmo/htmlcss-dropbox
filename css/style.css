@@ -21,7 +21,6 @@ img{
 body{
     font-family: 'Open Sans', sans-serif;
     margin-top: 70px;
-    /* background-color: green; */
 }
 .debug{
     border: 1px solid green;
@@ -161,7 +160,8 @@ header section .btn{
 .partner,
 .business,
 .pre-gallery,
-.after-gallery{
+.after-gallery,
+.faq{
     margin-bottom: 150px;
 }
 
@@ -490,4 +490,46 @@ header section .btn{
 .row-faq i{
     margin-right: 40px;
     font-size: .8rem;
+}
+
+/* FOOTER */
+footer{
+    background-color: var(--bg-footer);
+    justify-content: center;
+    color: white;
+    padding: 100px 0;
+}
+footer .big-container{
+    flex-direction: column;
+    min-width: 900px;
+}
+footer .big-container .footer-list{
+    justify-content: space-between;
+    width: 100%;
+}
+footer ul{
+    line-height: 35px;
+}
+footer h3{
+    margin-bottom: 20px;
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: var(--border-gray);
+}
+footer .grey-row{
+    width: 10%;
+}
+footer .big-container .language{
+    color: var(--border-gray);
+}
+footer .big-container .language > *:hover{
+    cursor: pointer;
+    color: var(--text-gray);
+}
+footer .big-container .language .fa-sort-up{
+    vertical-align: bottom;
+    font-size: .8rem
 }
