@@ -485,6 +485,7 @@ header section .btn{
     flex-direction: column;
     padding: 30px 0;
     border-top: 1px solid black;
+    
     font-weight: 600;
 }
 .row-faq:hover{
@@ -493,8 +494,29 @@ header section .btn{
 .row-faq:hover .hidden-row{
     display: block;
 }
+.row-faq:hover .block-row i:last-child{
+    display: block;
+}
+.row-faq:hover .block-row i:first-child{
+    display: none;
+}
 .row-faq .block-row{
+    position: relative;
     justify-content: space-between;
+}
+.row-faq .block-row .box-i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    position: relative;
+}
+.row-faq .block-row span i{
+    position: absolute;
+    right: 5px;
+}
+.row-faq .block-row span i:last-child{
+    display: none;
 }
 .row-faq .hidden-row{
     margin: 40px 0 0 0;
@@ -504,6 +526,9 @@ header section .btn{
 .row-faq i{
     margin-right: 40px;
     font-size: .8rem;
+}
+.last-row{
+    border-bottom: 1px solid black;
 }
 
 /* FOOTER */
