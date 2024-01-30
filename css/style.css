@@ -372,12 +372,9 @@ header section .btn{
 }
 .box-gallery{
     width: calc(100% / 3);
-    min-width: 500px;
-    max-width: 510px;
 }
 .gallery .glr-side{
     flex-wrap: wrap;
-    min-width: 420px;
 }
 .gallery .glr-centre{
     background-color: var(--bg-clients);
@@ -390,8 +387,8 @@ header section .btn{
     overflow: auto;
 }
 .gallery .glr-centre .box-designit{
-    /* background-color: green; */
     width: 100%;
+    height: 100%;
     overflow: auto;
 }
 .gallery .glr-centre #signature{
@@ -415,7 +412,7 @@ header section .btn{
 }
 .square{
     width: 50%;
-    height: 250px;
+    aspect-ratio: 1/1;
 }
 /* COLORI BOX GALLERY */
 .square-green{
